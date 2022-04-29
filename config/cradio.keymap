@@ -72,7 +72,7 @@
        		
         default_layer {
             bindings = <
-                &kp J          &kp G        &kp M       &kp P          &kp V         &mt LEFT_BRACE LEFT_PARENTHESIS            &mt PLUS EQUAL        &mt SLASH GT     &kp NON_US_HASH STAR       &mt DQT SQT
+                &kp J          &kp G        &kp M       &kp P          &kp V         &mt LEFT_BRACE LEFT_PARENTHESIS            &mt PLUS EQUAL        &mt SLASH GT     &mt NON_US_HASH STAR       &mt DQT SQT
                 &mt LSHIFT R   &mt LCTRL S  &mt LGUI N  &mt LALT D     &kp B         &mt COMMA PERIOD                &mt LALT A     &mt RGUI E   &mt RCTRL I   &mt RSHFT H
                 &mt Z X        &mt Q F      &kp L       &kp C          &kp W         &mt MINUS UNDERSCORE            &kp U          &kp O        &kp Y         &kp K
                                                         &mo NAV_L      &kp T         &kp SPACE                       &mo SYM_L
