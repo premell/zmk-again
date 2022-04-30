@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-&mt {
+&hm {
   //flavor = "tap-preferred";
   tapping_term_ms = <500>;
 };
@@ -55,15 +55,24 @@
             bindings = <&kp LGUI>;
         };
         
-        
            combo_rgui {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
         };
-        
+    };
 
-        
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
         keymap {
@@ -72,9 +81,9 @@
        		
         default_layer {
             bindings = <
-                &kp J          &kp G        &kp M       &kp P          &kp V         &mt LEFT_BRACE LEFT_PARENTHESIS            &mt PLUS EQUAL        &mt SLASH GT     &mt NON_US_HASH STAR       &mt DQT SQT
-                &mt LSHIFT R   &mt LCTRL S  &mt LGUI N  &mt LALT D     &kp B         &mt COMMA PERIOD                &mt LALT A     &mt RGUI E   &mt RCTRL I   &mt RSHFT H
-                &mt Z X        &mt Q F      &kp L       &kp C          &kp W         &mt MINUS UNDERSCORE            &kp U          &kp O        &kp Y         &kp K
+                &kp J          &kp G        &kp M       &kp P          &kp V         &hm LEFT_BRACE LEFT_PARENTHESIS            &hm PLUS EQUAL        &hm SLASH GT     &hm NON_US_HASH STAR       &hm DQT SQT
+                &hm LSHIFT R   &hm LCTRL S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                &hm LALT A     &hm RGUI E   &hm RCTRL I   &hm RSHFT H
+                &hm Z X        &hm Q F      &kp L       &kp C          &kp W         &hm MINUS UNDERSCORE            &kp U          &kp O        &kp Y         &kp K
                                                         &mo NAV_L      &kp T         &kp SPACE                       &mo SYM_L
             >;
         };
