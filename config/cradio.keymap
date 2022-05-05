@@ -243,6 +243,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
         default_layer {
             bindings = <
                 &kp J          &kp G        &kp M       &kp SE_SQT         &kp SE_SQT   &hm SE_LEFT_BRACE SE_LEFT_PARENTHESIS  &hm SE_PLUS SE_EQUAL   &hm SE_SLASH SE_GT   &hm SE_SQT SE_DQT &hm SE_QUESTION SE_EXCLAMATION 
