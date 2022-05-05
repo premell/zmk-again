@@ -24,8 +24,8 @@
 #define SE_OE COLON
 
 #define SE_PLUS MINUS // +
-//#define SE_ACUT KC_EQL  // ´ (dead)
-//#define SE_DIAE KC_RBRC // ¨ (dead)
+#define SE_ACUT KC_EQL  // ´ (dead)
+#define SE_DIAE KC_RBRC // ¨ (dead)
 #define SE_LT BACKSLASH // <
 #define SE_MINUS KP_SLASH // -
 #define SE_SQT POUND // '
@@ -45,11 +45,11 @@
 #define SE_QUESTION LS(SE_PLUS) // ?
 #define SE_GRAVE  LS(SE_ACUT) // ` (dead)
 #define SE_CARET LS(SE_DIAE) // ^ (dead)
-#define SE_STAR LS(SE_QUOT) // *
-#define SE_GT LS(SE_LABK) // >
-#define SE_COLON LS(KP_COMMA) // ;
+#define SE_STAR LS(SE_SQT) // *
+#define SE_GT LS(SE_LT) // >
+#define SE_COLON LS(COMMA) // ;
 #define SE_SEMICOLON LS(KP_DOT)  // :
-#define SE_UNDERSCORE LS(KP_MINUS) // _
+#define SE_UNDERSCORE LS(MINUS) // _
 
 // AltGr symbols
 #define SE_AT_SIGN   LS(KP_N2)    // @
@@ -62,7 +62,7 @@
 #define SE_RIGHT_BRACE LS(KP_N0)    // }
 #define SE_BACKSLASH LS(SE_PLUS) // (backslash)
 #define SE_TILDE LS(SE_DIAE) // ~ (dead)
-#define SE_PIPE LS(SE_LABK) // |
+#define SE_PIPE LS(SE_LT) // |
 
 
 
