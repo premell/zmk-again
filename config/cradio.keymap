@@ -245,7 +245,7 @@
 
         default_layer {
             bindings = <
-                &kp J          &kp G        &kp M       &kp P          &kp SE_SQT   &hm SE_LEFT_BRACE SE_LEFT_PARENTHESIS  s &hm SE_PLUS SE_EQUAL   &hm SE_SLASH SE_GT   &hm SE_SQT SE_DQT &hm SE_QUESTION SE_EXCLAMATION
+                &kp J          &kp G        &kp M       &kp P          &kp SE_SQT   &hm SE_LEFT_BRACE SE_LEFT_PARENTHESIS  s &hm SE_PLUS SE_EQUAL   &hm SE_SLASH SE_GT   &hm SE_SQT SE_DQT &hm SE_QUESTION SE_EXCLAMATION 
                 &hm LSHIFT R   &hm LCTRL S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                       &hm LALT A            &hm RGUI E        &hm RCTRL I                 &hm RSHFT H
                 &hm Z X        &hm Q F      &kp L       &kp C          &kp W         &hm SE_MINUS SE_UNDERSCORE                   &kp U                 &kp O             &kp Y                       &kp K
                                                         &sl NAV_L      &kp T         &kp SPACE        &sl SYM_L
