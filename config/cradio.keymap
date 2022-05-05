@@ -39,8 +39,8 @@
 #define SE_PERCENT LS(KP_N5)    // %
 #define SE_AND LS(KP_N6)    // &
 #define SE_SLASH LS(KP_N7)    // /
-#define SE_LEFT_PARANTHESIS LS(KP_N8)    // (
-#define SE_RIGHT_PARANTHESIS LS(KP_N9)    // )
+#define SE_LEFT_PARENTHESIS LS(KP_N8)    // (
+#define SE_RIGHT_PARENTHESIS LS(KP_N9)    // )
 #define SE_EQUAL  LS(KP_N0)    // =
 #define SE_QUESTION LS(SE_PLUS) // ?
 #define SE_GRAVE  LS(SE_ACUT) // ` (dead)
