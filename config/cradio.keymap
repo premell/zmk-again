@@ -275,7 +275,11 @@
         sym_layer {
             bindings = <
                 &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_N4         &kp KP_N5     &kp KP_N6          &kp KP_N7     &kp KP_N8     &kp KP_N9      &kp KP_N0               
-                &kp SE_LEFT_PARENTHESIS     &kp SE_RIGHT_PARENTHESIS       &kp COLON     &kp SE_DOLLAR                   &kp SE_PIPE    &kp SE_GRAVE             &kp SE_HASH      &kp SE_PERCENT     &kp SE_LEFT_BRACE     &kp SE_RIGHT_BRACE
+                &kp SE_LEFT_PARENTHESIS     &kp SE_RIGHT_PARENTHESIS     
+                  &kp COLON     &kp SE_DOLLAR                 
+                  &kp SE_PIPE    &kp SE_GRAVE             &kp SE_HASH   
+                    &kp SE_PERCENT     &kp SE_LEFT_BRACE    
+                     &kp SE_RIGHT_BRACE
                 &kp SE_LEFT_BRACKET         &kp SE_RIGHT_BRACKET         &kp SE_SEMICOLON   &kp SE_AT_SIGN              &hm SE_BACKSLASH SE_STAR  &kp SE_TILDE             &kp SE_CARET            &kp SE_AND         &kp SE_LT     &kp SE_GT
                                                                   &sl NAV_L          &none         &none             &sl SYM_L
             >;
