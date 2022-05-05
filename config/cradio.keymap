@@ -218,8 +218,8 @@
         nav_layer {
             bindings = <
                 &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4          &kp WINDOW_5       &kp WINDOW_6     &kp WINDOW_7     &kp WINDOW_8     &kp WINDOW_9          &none
-                &kp DESKTOP_SPEC     &kp DESKTOP_PREV     &kp DESKTOP_LT      &kp DESKTOP_RT         &kp  ROT_LAYOUT                       &kp KILL_WINDOW &kp ROTATE_WINDOW_LT &kp ROTATE_WINDOW_RT  &kp MOVE_TO_MASTER &kp MOVE_TO_MASTER
-                &kp TAB_LT     &kp TAB_RT     &kp WINDOW_LT       &kp WINDOW_RT                    &kp TOGGLE_FLOATING                       &kp MAXIMIZE &kp MINIMIZE &kp UN_MINIMIZE  &kp SHRINK_WIDTH &kp EXPAND_WIDTH
+                &kp DESKTOP_SPEC     &kp DESKTOP_PREV     &kp DESKTOP_LT      &kp DESKTOP_RT         &kp ROT_LAYOUT             &kp KILL_WINDOW   &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       &kp MOVE_TO_MASTER
+                &kp TAB_LT     &kp TAB_RT     &kp WINDOW_LT       &kp WINDOW_RT      &kp TOGGLE_FLOATING                 &kp MAXIMIZE       &kp MINIMIZE        &kp UN_MINIMIZE    &kp SHRINK_WIDTH     &kp EXPAND_WIDTH
                                                   &sl NAV_L          &none         &sl NAV2_L             &sl SYM_L
 
             >;
