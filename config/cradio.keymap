@@ -47,7 +47,7 @@
 
 // Linux specific navigation 
 #define DESKTOP_PREV   LG(ESC)
-#define DESKTOP_SPEC   LG(o)
+#define DESKTOP_SPEC   LG(O)
 
 #define WINDOW_1   LG(1)
 #define WINDOW_2   LG(2)
@@ -72,17 +72,17 @@
 #define ROT_LAYOUT          LG(SPACE)
 #define TOGGLE_FLOATING     LG(LC(SPACE))
 #define MOVE_TO_MASTER      LG(LC(RET))
-#define ROTATE_WINDOW_LT    LG(LS(j))
-#define ROTATE_WINDOW_RT    LG(LS(k))
+#define ROTATE_WINDOW_LT    LG(LS(J))
+#define ROTATE_WINDOW_RT    LG(LS(K))
 
-#define UN_MINIMIZE     LG(LC(n))
+#define UN_MINIMIZE     LG(LC(N))
 
-#define SHRINK_WIDTH    LG(LA(h))
-#define EXPAND_WIDTH    LG(LA(l))
-#define INC_COL         LG(LC(h))
-#define DEC_COL         LG(LC(l))
-#define INC_MASTER      LG(LS(h))
-#define DEC_MASTER      LG(LS(l))
+#define SHRINK_WIDTH    LG(LA(H))
+#define EXPAND_WIDTH    LG(LA(L))
+#define INC_COL         LG(LC(H))
+#define DEC_COL         LG(LC(L))
+#define INC_MASTER      LG(LS(H))
+#define DEC_MASTER      LG(LS(L))
 
 // TODO ADD VIEW TAG? 
 // TODO ADD BIDDIRECTIONAL CLIENT FOCUS
@@ -218,7 +218,7 @@
         nav_layer {
             bindings = <
                 &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4          &kp WINDOW_5       &kp WINDOW_6     &kp WINDOW_7     &kp WINDOW_8     &kp WINDOW_9          &none
-                &kp DESKTOP_SPEC     &kp DESKTOP_PREV     &kp DESKTOP_LT      &kp DESKTOP_RT         &kp ROT_LAYOUT             &kp KILL_WINDOW   &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       &kp MOVE_TO_MASTER
+                &kp DESKTOP_SPEC     &kp DESKTOP_PREV     &kp DESKTOP_LT      &kp DESKTOP_RT         &kp ROT_LAYOUT             &kp KILL_WINDOW   &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       &none
                 &kp TAB_LT     &kp TAB_RT     &kp WINDOW_LT       &kp WINDOW_RT      &kp TOGGLE_FLOATING                 &kp MAXIMIZE       &kp MINIMIZE        &kp UN_MINIMIZE    &kp SHRINK_WIDTH     &kp EXPAND_WIDTH
                                                   &sl NAV_L          &none         &sl NAV2_L             &sl SYM_L
 
