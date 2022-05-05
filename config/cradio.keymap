@@ -24,11 +24,11 @@
 #define SE_OE COLON
 
 #define SE_PLUS MINUS // +
-#define SE_ACUT KC_EQL  // ´ (dead)
-#define SE_DIAE KC_RBRC // ¨ (dead)
+#define SE_ACUT EQUAL  // ´ (dead)
+#define SE_DIAE RIGHT_BRACKET // ¨ (dead)
 #define SE_LT BACKSLASH // <
 #define SE_MINUS KP_SLASH // -
-#define SE_SQT POUND // '
+#define SE_SQT HASH // '
 
 
 // SHIFTED SYMBOLS
