@@ -125,7 +125,7 @@
 #define EXPAND_WIDTH    LG(LA(L))
 #define INC_COL         LG(LC(H))
 #define DEC_COL         LG(LC(L))
-#define INC_MASTER      LG(LS(H))sk
+#define INC_MASTER      LG(LS(H))
 #define DEC_MASTER      LG(LS(L))
 
 // TODO ADD VIEW TAG? 
@@ -299,7 +299,11 @@
         nav2_layer {
             bindings = <
                 &kp SEND_W_TO_1        &kp SEND_W_TO_2        &kp SEND_W_TO_3       &kp SEND_W_TO_4          &kp SEND_W_TO_5       &kp SEND_W_TO_6     &kp SEND_W_TO_7     &kp SEND_W_TO_8     &kp SEND_W_TO_9          &none
-                &kp DEC_COL     &kp INC_COL     &kp DEC_MASTER      &kp INC_MASTER         &none                   &kp F1  &kp F2 &kp F3  &kp F4  &kp F5 
+                &kp DEC_COL    
+                 &kp INC_COL   
+                 &kp DEC_MASTER    
+                   &kp INC_MASTER         &none                  
+                 &kp F1  &kp F2 &kp F3  &kp F4  &kp F5 
                 &sk LSHIFT      &sk LCTRL     &sk LGUI       &sk LALT                    &none                       &kp F6 &kp F7 &kp F8  &kp F9  &kp F10 
                                                         &none     &none       &kp F11  &kp F12
                 
