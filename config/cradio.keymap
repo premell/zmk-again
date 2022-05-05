@@ -23,7 +23,7 @@
 #define SE_AE SQT
 #define SE_OE COLON
 
-#define SE_PLUS KC_MINUS // +
+#define SE_PLUS MINUS // +
 //#define SE_ACUT KC_EQL  // ´ (dead)
 //#define SE_DIAE KC_RBRC // ¨ (dead)
 #define SE_LT BACKSLASH // <
