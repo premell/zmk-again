@@ -31,37 +31,37 @@
 #define SE_MINUS KP_SLASH // -
 
 // SHIFTED SYMBOLS
-#define SE_EXCLAMATION S(KP_N1)    // !
-#define SE_DQT S(KP_N2)    // "
-#define SE_HASH S(KP_N3)    // #
+#define SE_EXCLAMATION LS(KP_N1)    // !
+#define SE_DQT LS(KP_N2)    // "
+#define SE_HASH LS(KP_N3)    // #
 //#define SE_CURR S(KP_N4)    // ¤
-#define SE_PERCENT S(KP_N5)    // %
-#define SE_AND S(KP_N6)    // &
-#define SE_SLASH S(KP_N7)    // /
-#define SE_LEFT_PARANTHESIS S(KP_N8)    // (
-#define SE_RIGHT_PARANTHESIS S(KP_N9)    // )
-#define SE_EQUAL  S(KP_N0)    // =
-#define SE_QUESTION S(SE_PLUS) // ?
-#define SE_GRAVE  S(SE_ACUT) // ` (dead)
-#define SE_CARET S(SE_DIAE) // ^ (dead)
-#define SE_STAR S(SE_QUOT) // *
-#define SE_GT S(SE_LABK) // >
-#define SE_COLON S(KP_COMMA) // ;
-#define SE_SEMICOLON S(KP_DOT)  // :
-#define SE_UNDERSCORE S(KP_MINUS) // _
+#define SE_PERCENT LS(KP_N5)    // %
+#define SE_AND LS(KP_N6)    // &
+#define SE_SLASH LS(KP_N7)    // /
+#define SE_LEFT_PARANTHESIS LS(KP_N8)    // (
+#define SE_RIGHT_PARANTHESIS LS(KP_N9)    // )
+#define SE_EQUAL  LS(KP_N0)    // =
+#define SE_QUESTION LS(SE_PLUS) // ?
+#define SE_GRAVE  LS(SE_ACUT) // ` (dead)
+#define SE_CARET LS(SE_DIAE) // ^ (dead)
+#define SE_STAR LS(SE_QUOT) // *
+#define SE_GT LS(SE_LABK) // >
+#define SE_COLON LS(KP_COMMA) // ;
+#define SE_SEMICOLON LS(KP_DOT)  // :
+#define SE_UNDERSCORE LS(KP_MINUS) // _
 
 // AltGr symbols
-#define SE_AT_SIGN   ALGR(KP_N2)    // @
+#define SE_AT_SIGN   LS(KP_N2)    // @
 //#define SE_PND  ALGR(KP_N3)    // £
-#define SE_DOLLAR  ALGR(KP_N4)    // $
+#define SE_DOLLAR  LS(KP_N4)    // $
 //#define SE_EURO ALGR(KP_N5)    // €
-#define SE_LEFT_BRACE ALGR(KP_N7)    // {
-#define SE_LEFT_BRACKET ALGR(KP_N8)    // [
-#define SE_RIGHT_BRACKET ALGR(KP_N9)    // ]
-#define SE_RIGHT_BRACE ALGR(KP_N0)    // }
-#define SE_BACKSLASH ALGR(SE_PLUS) // (backslash)
-#define SE_TILDE ALGR(SE_DIAE) // ~ (dead)
-#define SE_PIPE ALGR(SE_LABK) // |
+#define SE_LEFT_BRACE LS(KP_N7)    // {
+#define SE_LEFT_BRACKET LS(KP_N8)    // [
+#define SE_RIGHT_BRACKET LS(KP_N9)    // ]
+#define SE_RIGHT_BRACE LS(KP_N0)    // }
+#define SE_BACKSLASH LS(SE_PLUS) // (backslash)
+#define SE_TILDE LS(SE_DIAE) // ~ (dead)
+#define SE_PIPE LS(SE_LABK) // |
 
 
 
