@@ -10,33 +10,174 @@
 
 
 &mt {
-  //flavor = "tap-preferred";
   tapping_term_ms = <500>;
 };
 
-#define NAV_L 1
-#define OTHER_L 2
-#define NUM_L 3
-#define SYM_L 4
+// &sl {
+//     release-after-ms = <2000>;
+// };
+
+
+// #############      SWEDISH COMPATIBLE SPECIAL CHARACTERS        #################
+#define SE_AA LEFT_BRACE
+#define SE_AE SQT
+#define SE_OE LEFT_BRACE
+
+// #############      LAYERS        #################
+
+#define SYM_L 1
+#define NAV_L 2
+#define NAV2_L 3
+#define OTHER_L 4
+
+// #############      WINDOW KEYS        #################
+
+// Desktop and tab navigation shortcuts
+#define DESKTOP_LT   LC(LG(LEFT))
+#define DESKTOP_RT   LC(LG(RIGHT))
+#define WINDOW_LT    LA(LS(TAB))
+#define WINDOW_RT    LA(TAB)
+#define TAB_LT       LC(LS(TAB))
+#define TAB_RT       LC(TAB)
+
+// Generic bindings
+#define KILL_WINDOW  LA(F4)
+#define MAXIMIZE  LG(UP)
+#define MINIMIZE  LG(DOWN)
+
+// Linux specific navigation 
+#define DESKTOP_PREV   LG(ESC)
+#define DESKTOP_SPEC   LG(o)
+
+#define WINDOW_1   LG(1)
+#define WINDOW_2   LG(2)
+#define WINDOW_3   LG(3)
+#define WINDOW_4   LG(4)
+#define WINDOW_5   LG(5)
+#define WINDOW_6   LG(6)
+#define WINDOW_7   LG(7)
+#define WINDOW_8   LG(8)
+#define WINDOW_9   LG(9)
+
+#define SEND_W_TO_1   LG(LS(1))
+#define SEND_W_TO_2   LG(LS(2))
+#define SEND_W_TO_3   LG(LS(3))
+#define SEND_W_TO_4   LG(LS(4))
+#define SEND_W_TO_5   LG(LS(5))
+#define SEND_W_TO_6   LG(LS(6))
+#define SEND_W_TO_7   LG(LS(7))
+#define SEND_W_TO_8   LG(LS(8))
+#define SEND_W_TO_9   LG(LS(9))
+
+#define ROT_LAYOUT          LG(SPACE)
+#define TOGGLE_FLOATING     LG(LC(SPACE))
+#define MOVE_TO_MASTER      LG(LC(RET))
+#define ROTATE_WINDOW_LT    LG(LS(j))
+#define ROTATE_WINDOW_RT    LG(LS(k))
+
+#define UN_MINIMIZE     LG(LC(n))
+
+#define SHRINK_WIDTH    LG(LA(h))
+#define EXPAND_WIDTH    LG(LA(l))
+#define INC_COL         LG(LC(h))
+#define DEC_COL         LG(LC(l))
+#define INC_MASTER      LG(LS(h))
+#define DEC_MASTER      LG(LS(l))
+
+// TODO ADD VIEW TAG? 
+// TODO ADD BIDDIRECTIONAL CLIENT FOCUS
+// TODO ADD AND START USING TMUX
+// TODO POWER DOWN
+
+
+
+
+
 
 / { 
- 
+    combos {
+        compatible = "zmk,combos";
+        // LEFT ROW 2
+         combo_esc {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp LCTRL &kp BACKSPACE>;
+        };
 
+        // RIGHT ROW 1
+          combo_esc {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp TAB>;
+        };
+         combo_esc {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp SE_AA>;
+        };
+         combo_tab {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp SE_AE>;
+        };
+            combo_tab {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+             bindings = <&kp SE_OE>;
+        };
 
-   //  combos {
-    //     compatible = "zmk,combos";
-     //    combo_esc {
-       //      timeout-ms = <50>;
-  //           key-positions = <0 1>;
-   //          bindings = <&kp ESC>;
-      //   };
-        
-        //  combo_tab {
-          //   timeout-ms = <50>;
-            // key-positions = <10 11>;
-             //bindings = <&kp TAB>;
- //        };
-    // };
+        // RIGHT ROW 2
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp DELETE>;
+        };
+         combo_tab {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp BACKSPACE>;
+        };
+            combo_tab {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+             bindings = <&kp RETURN>;
+        };
+            combo_tab {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+             bindings = <&kp ESCAPE>;
+        };
+       
+        // RIGHT ROW 3
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+            bindings = <&kp LEFT_ARROW>;
+        };
+         combo_tab {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp DOWN_ARROW>;
+        };
+            combo_tab {
+            timeout-ms = <50>;
+          key-positions = <27 28>;
+            bindings = <&kp UP_ARROW>;
+        };
+            combo_tab {
+            timeout-ms = <50>;
+         key-positions = <28 29>;
+            bindings = <&kp RIGHT_ARROW>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <4>;
+        };
+    };
 
 
     behaviors {
@@ -44,7 +185,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <600>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -57,48 +198,52 @@
        		
         default_layer {
             bindings = <
-                &kp J          &kp G        &kp M       &kp P          &kp V         &hm LEFT_BRACE LEFT_PARENTHESIS            &hm PLUS EQUAL        &hm SLASH GT     &hm NON_US_HASH STAR       &hm DQT SQT
-                &hm LSHIFT R   &hm LCTRL S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                &hm LALT A     &hm RGUI E   &hm RCTRL I   &hm RSHFT H
-                &hm Z X        &hm Q F      &kp L       &kp C          &kp W         &hm MINUS UNDERSCORE            &kp U          &kp O        &kp Y         &kp K
-                                                        &mo NAV_L      &kp T         &kp SPACE                       &mo SYM_L
+                &kp J          &kp G        &kp M       &kp P          &kp V         &hm LEFT_BRACE LEFT_PARENTHESIS        &hm PLUS EQUAL        &hm SLASH GT        &hm QUESTION EXCLAMATION       &hm SQT DQT
+                &hm LSHIFT R   &hm LCTRL S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                       &hm LALT A            &hm RGUI E        &hm RCTRL I                 &hm RSHFT H
+                &hm Z X        &hm Q F      &kp L       &kp C          &kp W         &hm MINUS UNDERSCORE                   &kp U                 &kp O             &kp Y                       &kp K
+                                                        &sl NAV_L      &kp T         &kp SPACE                              &sl SYM_L
             >;
         };
+
+        sym_layer {
+            bindings = <
+                &kp 1     &kp 2     &kp 3      &kp 4         &kp 5     &kp 6          &kp 7     &kp 8     &kp 9      &kp 0               
+                &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE    &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE
+                &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp SEMICOLON   &kp AT_SIGN              &hm BACKSLASH STAR  &kp TILDE             &kp CARET            &kp AMPERSAND         &kp LT     &kp GT
+                                                                  &sl NAV_L          &none         &none             &sl SYM_L
+            >;
+        };
+
 
         nav_layer {
             bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp LARW       &kp DARW    &kp UARW   &kp RARW
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
-                                                  &trans          &trans       &kp ESC          &kp DEL
-            >;
-        };
-   
-        other_layer {
-            bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &trans      &trans     &trans
-                                                  &trans          &trans       &trans           &trans
+                &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4          &kp WINDOW_5       &kp WINDOW_6     &kp WINDOW_7     &kp WINDOW_8     &kp WINDOW_9          &none
+                &kp DESKTOP_SPEC     &kp DESKTOP_PREV     &kp DESKTOP_LT      &kp DESKTOP_RT         &kp  ROT_LAYOUT                       &kp KILL_WINDOW &kp ROTATE_WINDOW_LT &kp ROTATE_WINDOW_RT  &kp MOVE_TO_MASTER &kp MOVE_TO_MASTER
+                &kp TAB_LT     &kp TAB_RT     &kp WINDOW_LT       &kp WINDOW_RT                    &kp TOGGLE_FLOATING                       &kp MAXIMIZE &kp MINIMIZE &kp UN_MINIMIZE  &kp SHRINK_WIDTH &kp EXPAND_WIDTH
+                                                  &sl NAV_L          &none         &sl NAV2_L             &sl SYM_L
+
             >;
         };
 
-        num_layer {
+        nav2_layer {
             bindings = <
-                &kp LBKT   &kp N7     &kp N8      &kp N9          &kp RBKT      &trans          &trans         &trans      &trans     &trans
-                &kp SEMI   &kp N4     &kp N5      &kp N6          &kp EQUAL     &trans          &trans         &trans      &trans     &trans
-                &kp GRAVE  &kp N1     &kp N2      &kp N3          &kp BSLH      &trans          &trans         &trans      &trans     &trans
-                                                  &kp N0          &kp MINUS     &trans          &trans
+                &kp SEND_W_TO_1        &kp SEND_W_TO_2        &kp SEND_W_TO_3       &kp SEND_W_TO_4          &kp SEND_W_TO_5       &kp SEND_W_TO_6     &kp SEND_W_TO_7     &kp SEND_W_TO_8     &kp SEND_W_TO_9          &none
+                &kp DEC_COL     &kp INC_COL     &kp DEC_MASTER      &kp INC_MASTER         &none                   &kp F1  &kp F2 &kp F3  &kp F4  &kp F5 
+                &mo LSHIFT      &mo LCTRRL     &mo LGUI       &mo LALT                    &none                       &kp F6 &kp F7 &kp F8  &kp F9  &kp F10 
+                                                        &none     &none       &kp F11  &kp F12
+                
             >;
         };
-        
-        sym_layer {
+   
+   
+        other_layer {
             bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp LARW       &kp DARW    &kp UARW   &kp RARW
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
-                                                  &trans          &trans       &kp ESC          &kp DEL
+                &none     &none     &none      &none          &kp C_POWER       &none           &kp C_PREV         &kp C_PLAY_PAUSE      &kp C_NEXT     &none
+                &kp CAPSLOCK     &none     &none      &kp C_SLEEP    &kp C_RESET       &kp C_MUTE           &kp C_VOLUME_DOWN         &kp   C_VOLUME_UP    &none     &none
+                &none     &none     &none      &none          &none       &none           &none       &kp  C_BRIGHTNESS_DEC     &kp    C_BRIGHTNESS_INC  &none
+                                                  &none          &none       &none           &none
             >;
         };
-        
+      
 	};
 };
