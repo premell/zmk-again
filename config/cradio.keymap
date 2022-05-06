@@ -101,7 +101,7 @@
          combo_esc {
             timeout-ms = <50>;
             key-positions = <13 14>;
-            bindings = <&kp LCTRL &kp BACKSPACE>;
+            bindings = <&kp LC(BACKSPACE)>;
         };
 
         // RIGHT ROW 1
@@ -207,7 +207,7 @@
 
         sym_layer {
             bindings = <
-                &kp 1     &kp 2     &kp 3      &kp 4         &kp 5     &kp 6          &kp 7     &kp 8     &kp 9      &kp 0               
+                &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_N4         &kp KP_N5     &kp KP_N6          &kp KP_N7     &kp KP_N8     &kp KP_N9      &kp KP_N0               
                 &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE    &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE
                 &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp SEMICOLON   &kp AT_SIGN              &hm BACKSLASH STAR  &kp TILDE             &kp CARET            &kp AMPERSAND         &kp LT     &kp GT
                                                                   &sl NAV_L          &none         &none             &sl SYM_L
@@ -238,12 +238,21 @@
    
         other_layer {
             bindings = <
-                &none     &none     &none      &none          &kp C_POWER       &none           &kp C_PREV         &kp C_PLAY_PAUSE      &kp C_NEXT     &none
-                &kp CAPSLOCK     &none     &none      &kp C_SLEEP    &kp C_RESET       &kp C_MUTE           &kp C_VOLUME_DOWN         &kp   C_VOLUME_UP    &none     &none
+                &none     &none     &none      &none          &none       &none           &kp C_PREV         &kp C_PLAY_PAUSE      &kp C_NEXT     &none
+                &none     &none     &none      &none  &none     &kp C_MUTE           &kp C_VOLUME_DOWN         &kp   C_VOLUME_UP    &none     &none
                 &none     &none     &none      &none          &none       &none           &none       &kp  C_BRIGHTNESS_DEC     &kp    C_BRIGHTNESS_INC  &none
                                                   &none          &none       &none           &none
             >;
         };
+   
+        /* other_layer { */
+        /*     bindings = < */
+        /*         &none     &none     &none      &none          &kp C_POWER       &none           &kp C_PREV         &kp C_PLAY_PAUSE      &kp C_NEXT     &none */
+        /*         &kp CAPSLOCK     &none     &none      &kp C_SLEEP    &kp C_RESET       &kp C_MUTE           &kp C_VOLUME_DOWN         &kp   C_VOLUME_UP    &none     &none */
+        /*         &none     &none     &none      &none          &none       &none           &none       &kp  C_BRIGHTNESS_DEC     &kp    C_BRIGHTNESS_INC  &none */
+        /*                                           &none          &none       &none           &none */
+        /*     >; */
+        /* }; */
       
 	};
-};
+}; 
