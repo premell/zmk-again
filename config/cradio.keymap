@@ -19,9 +19,9 @@
 
 
 // #############      SWEDISH COMPATIBLE SPECIAL CHARACTERS        #################
-#define SE_AA LEFT_BRACE
+#define SE_AA LEFT_BRACKET
 #define SE_AE SQT
-#define SE_OE LEFT_BRACE
+#define SE_OE SEMICOLON
 
 // #############      LAYERS        #################
 
@@ -49,25 +49,25 @@
 #define DESKTOP_PREV   LG(ESC)
 #define DESKTOP_SPEC   LG(O)
 
-#define WINDOW_1   LG(1)
-#define WINDOW_2   LG(2)
-#define WINDOW_3   LG(3)
-#define WINDOW_4   LG(4)
-#define WINDOW_5   LG(5)
-#define WINDOW_6   LG(6)
-#define WINDOW_7   LG(7)
-#define WINDOW_8   LG(8)
-#define WINDOW_9   LG(9)
+#define WINDOW_1   LG(KP_N1)
+#define WINDOW_2   LG(KP_N2)
+#define WINDOW_3   LG(KP_N3)
+#define WINDOW_4   LG(KP_N4)
+#define WINDOW_5   LG(KP_N5)
+#define WINDOW_6   LG(KP_N6)
+#define WINDOW_7   LG(KP_N7)
+#define WINDOW_8   LG(KP_N8)
+#define WINDOW_9   LG(KP_N9)
 
-#define SEND_W_TO_1   LG(LS(1))
-#define SEND_W_TO_2   LG(LS(2))
-#define SEND_W_TO_3   LG(LS(3))
-#define SEND_W_TO_4   LG(LS(4))
-#define SEND_W_TO_5   LG(LS(5))
-#define SEND_W_TO_6   LG(LS(6))
-#define SEND_W_TO_7   LG(LS(7))
-#define SEND_W_TO_8   LG(LS(8))
-#define SEND_W_TO_9   LG(LS(9))
+#define SEND_W_TO_1   LG(LS(KP_N1))
+#define SEND_W_TO_2   LG(LS(KP_N2))
+#define SEND_W_TO_3   LG(LS(KP_N3))
+#define SEND_W_TO_4   LG(LS(KP_N4))
+#define SEND_W_TO_5   LG(LS(KP_N5))
+#define SEND_W_TO_6   LG(LS(KP_N6))
+#define SEND_W_TO_7   LG(LS(KP_N7))
+#define SEND_W_TO_8   LG(LS(KP_N8))
+#define SEND_W_TO_9   LG(LS(KP_N9))
 
 #define ROT_LAYOUT          LG(SPACE)
 #define TOGGLE_FLOATING     LG(LC(SPACE))
@@ -98,75 +98,75 @@
     combos {
         compatible = "zmk,combos";
         // LEFT ROW 2
-         combo_esc {
+         combo_back_word {
             timeout-ms = <50>;
             key-positions = <13 14>;
-            bindings = <&kp LC(BACKSPACE)>;
+            bindings = <&kp LCTRL &kp BACKSPACE>;
         };
 
         // RIGHT ROW 1
-          combo_esc {
+          combo_tab {
             timeout-ms = <50>;
             key-positions = <5 6>;
             bindings = <&kp TAB>;
         };
-         combo_esc {
+         combo_aa {
             timeout-ms = <50>;
             key-positions = <6 7>;
             bindings = <&kp SE_AA>;
         };
-         combo_tab {
+         combo_ae {
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&kp SE_AE>;
         };
-            combo_tab {
+            combo_oe {
             timeout-ms = <50>;
             key-positions = <8 9>;
              bindings = <&kp SE_OE>;
         };
 
         // RIGHT ROW 2
-        combo_esc {
+        combo_del {
             timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&kp DELETE>;
         };
-         combo_tab {
+         combo_back {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp BACKSPACE>;
         };
-            combo_tab {
+            combo_return {
             timeout-ms = <50>;
             key-positions = <17 18>;
              bindings = <&kp RETURN>;
         };
-            combo_tab {
+            combo_esc {
             timeout-ms = <50>;
             key-positions = <18 19>;
              bindings = <&kp ESCAPE>;
         };
        
         // RIGHT ROW 3
-        combo_esc {
+        combo_left {
             timeout-ms = <50>;
             key-positions = <25 26>;
             bindings = <&kp LEFT_ARROW>;
         };
-         combo_tab {
+         combo_down {
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp DOWN_ARROW>;
         };
-            combo_tab {
+            combo_up {
             timeout-ms = <50>;
           key-positions = <27 28>;
             bindings = <&kp UP_ARROW>;
         };
-            combo_tab {
+            combo_right {
             timeout-ms = <50>;
-         key-positions = <28 29>;
+            key-positions = <28 29>;
             bindings = <&kp RIGHT_ARROW>;
         };
     };
@@ -207,7 +207,7 @@
 
         sym_layer {
             bindings = <
-                &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_N4         &kp KP_N5     &kp KP_N6          &kp KP_N7     &kp KP_N8     &kp KP_N9      &kp KP_N0               
+                &kp NUMBER_1     &kp KP_N2     &kp KP_N3      &kp KP_N4         &kp KP_N5     &kp KP_N6          &kp KP_N7     &kp KP_N8     &kp KP_N9      &kp KP_N0               
                 &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE    &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE
                 &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp SEMICOLON   &kp AT_SIGN              &hm BACKSLASH STAR  &kp TILDE             &kp CARET            &kp AMPERSAND         &kp LT     &kp GT
                                                                   &sl NAV_L          &none         &none             &sl SYM_L
