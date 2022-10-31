@@ -259,7 +259,7 @@
                 &kp Q          &kp G        &kp M       &kp P          &kp V      &hm PLUS EQUAL      &kp J             &kp K                &hm LEFT_BRACE LEFT_PARENTHESIS        &hm RIGHT_BRACE RIGHT_PARENTHESIS
                 &hm LCTRL R   &hm LSHIFT S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                       &hm LALT A            &hm RGUI E        &hm RSHFT I                 &hm RCTRL H
                 &hm Z X        &kp F      &kp L       &kp C          &kp W         &hm MINUS UNDERSCORE                   &kp U                 &kp O             &kp Y                      &hm SLASH GT 
-                                                        &sl NAV_L      &hm UTIL_L T        &kp SPACE                              &sl SYM_L
+                                                        &sl NAV_L      &lt UTIL_L T        &kp SPACE                              &sl SYM_L
             >;
         };
 
