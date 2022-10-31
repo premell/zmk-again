@@ -257,7 +257,7 @@
         default_layer {
             bindings = <
                 &kp Q          &kp G        &kp M       &kp P          &kp V      &hm PLUS EQUAL      &kp J             &kp K                &hm LEFT_BRACE LEFT_PARENTHESIS        &hm RIGHT_BRACE RIGHT_PARENTHESIS
-                &hm LCTRL R   &hm LSHIFT S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                       &hm LALT A            &hm RGUI E        &hm RSHFT I                 &hm RCTRL H
+                &hm LCTRL R   &hm LSHIFT S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                       &hm RALT A            &hm RGUI E        &hm RSHFT I                 &hm RCTRL H
                 &hm Z X        &kp F      &kp L       &kp C          &kp W         &hm MINUS UNDERSCORE                   &kp U                 &kp O             &kp Y                      &hm SLASH GT 
                                                         &sl NAV_L      &lt UTIL_L T        &kp SPACE                              &sl SYM_L
             >;
@@ -294,9 +294,9 @@
    
         UTIL_L {
             bindings = <
-                &none     &none     &kp cut      &kp yank          &kp DELETE       &none           &kp LEFT_ARROW         &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW
-                &hm LCTRL NUMBER_1     &hm LSHIFT NUMBER_2     &kp NUMBER_3      &kp NUMBER_4      &kp BACKSPACE     &none             &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0               
-                &kp uppercase_Y    &kp uppercase_D     &kp TAB                                        &kp NUMBER_5       &kp back_word       &none           &kp NUMBER_6       &kp  J     &kp    K  &kp G
+               &kp DELETE &none                  &none      &kp cut      &kp yank                   &none                  &kp  J     &kp    K  &kp G &none
+                &hm LCTRL NUMBER_1     &hm LSHIFT NUMBER_2     &kp NUMBER_3      &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6          &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0               
+                &kp uppercase_Y    &kp uppercase_D     &kp TAB                 &none           &kp back_word                          &none           &kp LEFT_ARROW         &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW          
                                                   &none          &none       &none           &none
             >;
         };
