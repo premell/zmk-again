@@ -284,7 +284,8 @@
         nav2_layer {
    bindings = <
                    &kp SEND_W_TO_1        &kp SEND_W_TO_2        &kp SEND_W_TO_3       &kp SEND_W_TO_4          &kp SEND_W_TO_5       &kp SEND_W_TO_6     &kp SEND_W_TO_7     &kp SEND_W_TO_8     &kp SEND_W_TO_9          &none
-                &kp DEC_COL     &kp INC_COL     &kp DEC_MASTER      &kp INC_MASTER         &none                   &kp F1  &kp F2 &kp F3  &kp F4  &kp F5
+               
+                &kp DEC_COL     &kp INC_COL     &kp DEC_MASTER      &kp INC_MASTER         &none   &none &none &none &none &none                 /*   &kp F1  &kp F2 &kp F3  &kp F4  &kp F5 */
 
 &none &none &none &none &none &none &none &none &none &none 
 &none &none &none &none 
