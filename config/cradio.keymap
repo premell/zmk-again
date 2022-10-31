@@ -299,8 +299,9 @@
 
         UTIL_L {
             bindings = <
-                &none     &none     &kp cut      &kp yank          &kp DELETE       &none           &kp LEFT_ARROW         &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW
-                &hm LCTRL NUMBER_1     &hm LSHIFT NUMBER_2     &kp NUMBER_3      &kp NUMBER_4      &kp BACKSPACE     &none             &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0               
+                /* &none     &none     &kp cut      &kp yank          &kp DELETE       &none           &kp LEFT_ARROW         &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW */
+                /* &hm LCTRL NUMBER_1     &hm LSHIFT NUMBER_2     &kp NUMBER_3      &kp NUMBER_4      &kp BACKSPACE     &none             &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0                */
+&none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
                 &kp uppercase_Y    &kp uppercase_D     &kp TAB                                        &kp NUMBER_5       &kp back_word       &none           &kp NUMBER_6       &kp  J     &kp    K  &kp G
                                                   &none          &none       &none           &none
             >;
