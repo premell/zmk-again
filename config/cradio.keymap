@@ -225,7 +225,7 @@
                 ;
         };
           uppercase_Y: uppercase_Y {
-            label = "uppercase_Y";
+            label = "test_uppercase_Y";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
