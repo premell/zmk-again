@@ -112,48 +112,22 @@
 #define SE_oe SEMICOLON
 #define SE_OE COLON
 
-
 #define SE_GT PIPE2
-#define SE_LT QUESTION
-#define SE_STAR NON_US_BACKSLASH // FIX THIS ONE
-#define SE_SINGLE_QUOTE BACKSLASH //THIS IS WRONG
-#define SE_UNDERSCORE  BACKSLASH
+#define SE_LT NON_US_BACKSLASH
+#define SE_STAR BACKSLASH // FIX THIS ONE
+#define SE_SINGLE_QUOTE BACKSLASH
+#define SE_UNDERSCORE  QUESTION
 #define SE_MINUS SLASH
 #define SE_QUESTION UNDERSCORE
 #define SE_PLUS  MINUS
 #define SE_GRAVE  EQUAL
 #define SE_EQUAL RIGHT_PARENTHESIS
 #define SE_RIGHT_PARENTHESIS  LEFT_PARENTHESIS
-#define SE_SLASH LEFT_PARENTHESIS
-#define SE_AMPERSAND AMPERSAND  // TODO FIX THIS
+#define SE_SLASH AMPERSAND
+#define SE_AMPERSAND LEFT_BRACKET  // TODO FIX THIS
 #define SE_PERCENT PERCENT
 #define SE_HASH HASH
 #define SE_AT_SIGN DOUBLE_QUOTES // TODO FIX THIS
-
-
-
-/* &kp SE_GT>
-&kp SE_LT'
-&kp SE_STA<R
-&kp SE_SING_LE_QUOTE
-&kp SE_UNDER-SCORE
-&kp SE_MINUS?
-&kp SE_QUESTI+ON
-&kp SE_PLUS´
-&kp SE_GRAVE=
-&kp SE_EQUAL)
-&kp SE_RIGHT_)PARENTHESIS
-&kp SE_SLASH)
-&kp SE_AMPERS/AND
-&kp SE_PERCENT%
-&kp SE_HASH#
-&kp SE_AT_SIÄGN
- */
-
-
-
-
-
 
 
 
@@ -407,33 +381,33 @@
 
         default_layer {
             bindings = <
-&kp SE_EXCLAMATION
-&kp SE_aa
-&kp SE_AA
-&kp SE_COLON
-&kp SE_PERIOD
-&kp SE_SEMI_COLON
-&kp SE_COMMA
-&kp SE_ae
-&kp SE_AE
-&kp SE_OE
-&kp SE_oe
-&kp SE_GT
-&kp SE_LT
-&kp SE_STAR
-&kp SE_SINGLE_QUOTE
-&kp SE_UNDERSCORE
-&kp SE_MINUS
-&kp SE_QUESTION
-&kp SE_PLUS
-&kp SE_GRAVE
-&kp SE_EQUAL
-&kp SE_RIGHT_PARENTHESIS
-&kp SE_SLASH
-&kp SE_AMPERSAND
-&kp SE_PERCENT
-&kp SE_HASH
-&kp SE_AT_SIGN
+&kp TILDE
+&kp TILDE2
+&kp NON_US_HASH
+&kp DOLLAR
+&kp CARET
+&kp ASTERISK
+&kp AMPERSAND
+&kp PIPE
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
+&kp A
 &kp A
 &kp A
 &kp A
