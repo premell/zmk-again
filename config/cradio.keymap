@@ -129,10 +129,10 @@
 #define SE_HASH HASH
 
 
-/*  FIX THESE
-
 #define SE_STAR NON_US_BACKSLASH
 #define SE_AT_SIGN DOUBLE_QUOTES // TODO FIX THIS
+/*  FIX THESE
+
  */
 
 // Swedish keys
