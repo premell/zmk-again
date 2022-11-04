@@ -394,11 +394,11 @@
 
         default {
             bindings = <
-&kp LS(EXCLAMATION) 
+&kp LS(NUMBER_2) 
 &kp LS(AT_SIGN)
 &kp LS(HASH)
-&kp LS(DOLLAR)
-&kp LS(PERCENT)
+&kp LS(GT)
+&kp LA(LS(GT))
 &kp LS(CARET)
 &kp LS(AMPERSAND)
 &kp LS(ASTERISK)
