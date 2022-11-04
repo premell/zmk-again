@@ -356,14 +356,14 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>,<&kp LSHIFT>, <&kp LSHIFT>, <&to OPERATIONAL_L>;
+            bindings = <&kp LSHIFT>, <&kp LSHIFT>,<&kp LSHIFT>, <&kp LSHIFT>, <&tog OPERATIONAL_L>;
         };
 
         hold_reset: hold_reset{
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <3000>;
+            tapping-term-ms = <2000>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&reset>, <&bootloader>;
@@ -392,41 +392,41 @@
         /* }; */
 
 
-        default_layer {
+        default {
             bindings = <
-&kp KP_PLUS
-&kp KP_MINUS
-&kp KP_MULTIPLY
-&kp KP_DIVIDE
-&kp KP_EQUAL
-&kp KP_EQUAL_AS400
-&kp KP_DOT
-&kp KP_COMMA
-&kp KP_LEFT_PARENTHESIS
-&kp KP_RIGHT_PARENTHESIS
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
-&kp A
+&kp LS(EXCLAMATION) 
+&kp LS(AT_SIGN)
+&kp LS(HASH)
+&kp LS(DOLLAR)
+&kp LS(PERCENT)
+&kp LS(CARET)
+&kp LS(AMPERSAND)
+&kp LS(ASTERISK)
+&kp LS(LEFT_PARENTHESIS)
+&kp LS(RIGHT_PARENTHESIS)
+&kp LS(EQUAL)
+&kp LS(PLUS)
+&kp LS(MINUS)
+&kp LS(UNDERSCORE)
+&kp LS(SLASH)
+&kp LS(QUESTION)
+&kp LS(BACKSLASH)
+&kp LS(PIPE)
+&kp LS(NON_US_BACKSLASH)
+&kp LS(PIPE2)
+&kp LS(SEMICOLON)
+&kp LS(COLON)
+&kp LS(SQT)
+&kp LS(DQT)
+&kp LS(COMMA)
+&kp LS(LT)
+&kp LS(GT)
+&kp LS(PERIOD)
+&kp LS(LEFT_BRACKET)
+&kp LS(LEFT_BRACE)
+&kp LS(RIGHT_BRACKET)
+&kp LS(RIGHT_BRACE)
+&kp LS(GRAVE)
 &operational_mode
          >;
         };
@@ -477,7 +477,7 @@
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none               &none &none &none &none &none 
             &none &none &bt BT_PRV &bt BT_NXT &none               &none &none &none &none &none 
             &kp T &none &none &none &hold_reset &hold_reset &none &none &none &none
-                        &to DEFAULT &none         &none &none 
+                        &tog DEFAULT &none         &none &none 
             >;
         }; 
 
