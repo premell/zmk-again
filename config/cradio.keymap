@@ -241,18 +241,19 @@
 
 
         // FOR OPERATIONAL LAYER
-        reset_left {
-            timeout-ms = <50>;
-            key-positions = <0 1 2 3>;
-            layers = <OPERATIONAL_L>;
-                bindings = <&bootloader>;
-        };
-        reset_right {
-            timeout-ms = <50>;
-            key-positions = <6 7 8 9>;
-            layers = <OPERATIONAL_L>;
-                bindings = <&bootloader>;
-        };
+        // combos dont work with reset
+        // reset_left {
+        //     timeout-ms = <50>;
+        //     key-positions = <0 1 2 3>;
+        //     layers = <OPERATIONAL_L>;
+        //         bindings = <&bootloader>;
+        // };
+        // reset_right {
+        //     timeout-ms = <50>;
+        //     key-positions = <6 7 8 9>;
+        //     layers = <OPERATIONAL_L>;
+        //         bindings = <&bootloader>;
+        // };
        
         // RIGHT ROW 3
         /*
@@ -354,8 +355,18 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&kp LSHIFT>, <&to OPERATIONAL_L>;
+            tapping-term-ms = <500>;
+            bindings = <&kp LSHIFT>, <&kp LSHIFT>,<&kp LSHIFT>, <&kp LSHIFT>, <&to OPERATIONAL_L>;
+        };
+
+        hold_reset: hold_reset{
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <3000>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&reset>, <&bootloader>;
         };
     };
 
@@ -465,7 +476,7 @@
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none               &none &none &none &none &none 
             &none &none &bt BT_PRV &bt BT_NXT &none               &none &none &none &none &none 
-            &kp T &none &none &none &reset              &reset &none &none &none &none
+            &kp T &none &none &none &hold_reset &hold_reset &none &none &none &none
                         &to DEFAULT &none         &none &none 
             >;
         }; 
