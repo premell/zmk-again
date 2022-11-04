@@ -235,13 +235,13 @@
         reset_left {
             timeout-ms = <50>;
             key-positions = <0 1 2 3>;
-            layers = <OPERATIONAL_L>
+            layers = <OPERATIONAL_L>;
                 bindings = <&bootloader>;
         };
         reset_right {
             timeout-ms = <50>;
             key-positions = <6 7 8 9>;
-            layers = <OPERATIONAL_L>
+            layers = <OPERATIONAL_L>;
                 bindings = <&bootloader>;
         };
        
