@@ -321,8 +321,6 @@
 
         default_layer {
             bindings = <
-   
-
 &kp SE_EXCLAMATION
 &kp SE_aa
 &kp SE_AA
@@ -350,7 +348,6 @@
 &kp SE_PERCENT
 &kp SE_HASH
 &kp SE_AT_SIGN
-&kp a
 &kp a
 &kp a
 &kp a
