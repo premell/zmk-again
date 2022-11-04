@@ -99,7 +99,40 @@
 
 
 // Swedish keys
-#define DEC_MASTER      LG(LS(L))
+#define SE_EXCLAMATION  EXCLAMATION
+#define SE_aa LEFT_BRACE
+#define SE_AA RIGHT_BRACKET
+#define SE_COLON LEFT_BRACKET
+#define SE_PERIOD GREATER_THAN
+#define SE_SEMI_COLON PERIOD
+#define SE_COMMA LESS_THAN
+#define SE_ae DOUBLE_QUOTES
+#define SE_AE COMMA
+#define SE_OE SINGLE_QUOTE
+#define SE_oe COLON
+#define SE_GT SEMICOLON
+#define SE_LT PIPE2
+#define SE_STAR NON_US_BACKSLASH 
+#define SE_SINGLE_QUOTE PIPE 
+#define SE_UNDERSCORE BACKSLASH 
+#define SE_MINUS QUESTION
+#define SE_QUESTION SLASH 
+#define SE_PLUS UNDERSCORE
+#define SE_GRAVE MINUS
+#define SE_EQUAL EQUAL 
+#define SE_RIGHT_PARENTHESIS RIGHT_PARENTHESIS 
+#define SE_SLASH  LEFT_PARENTHESIS 
+#define SE_AMPERSAND AMPERSAND
+#define SE_PERCENT PERCENT 
+#define SE_HASH HASH 
+#define SE_AT_SIGN DOUBLE_QUOTES 
+
+//GRAVE TILDE NON_US_HASH
+
+
+// RIGHT_BRACE  => ¨
+// PLUS => ´
+//DOLLAR => ¤
 
 
 // TODO add å ä and ö to the keyboard
@@ -279,11 +312,57 @@
         /* }; */
 
 
+        /* default_layer { */
+        /*     bindings = < */
+        /*       &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp AMPERSAND &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp EQUAL &kp PLUS &kp MINUS &kp UNDERSCORE &kp SLASH &kp QUESTION &kp BACKSLASH &kp PIPE &kp NON_US_BACKSLASH &kp PIPE2 &kp SEMICOLON &kp COLON &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COMMA &kp LESS_THAN &kp PERIOD &kp GREATER_THAN &kp LEFT_BRACKET &kp LEFT_BRACE &kp RIGHT_BRACKET &kp RIGHT_BRACE &kp GRAVE &kp TILDE &kp NON_US_HASH   */
+        /*     >; */
+        /* }; */
+
+
         default_layer {
             bindings = <
-              &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp AMPERSAND &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp EQUAL &kp PLUS &kp MINUS &kp UNDERSCORE &kp SLASH &kp QUESTION &kp BACKSLASH &kp PIPE &kp NON_US_BACKSLASH &kp PIPE2 &kp SEMICOLON &kp COLON &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COMMA &kp LESS_THAN &kp PERIOD &kp GREATER_THAN &kp LEFT_BRACKET &kp LEFT_BRACE &kp RIGHT_BRACKET &kp RIGHT_BRACE &kp GRAVE &kp TILDE &kp NON_US_HASH  
-            >;
+   
+
+&kp SE_EXCLAMATION
+&kp SE_aa
+&kp SE_AA
+&kp SE_COLON
+&kp SE_PERIOD
+&kp SE_SEMI_COLON
+&kp SE_COMMA
+&kp SE_ae
+&kp SE_AE
+&kp SE_OE
+&kp SE_oe
+&kp SE_GT
+&kp SE_LT
+&kp SE_STAR
+&kp SE_SINGLE_QUOTE
+&kp SE_UNDERSCORE
+&kp SE_MINUS
+&kp SE_QUESTION
+&kp SE_PLUS
+&kp SE_GRAVE
+&kp SE_EQUAL
+&kp SE_RIGHT_PARENTHESIS
+&kp SE_SLASH
+&kp SE_AMPERSAND
+&kp SE_PERCENT
+&kp SE_HASH
+&kp SE_AT_SIGN
+&kp a
+&kp a
+&kp a
+&kp a
+&kp a
+&kp a
+&kp a
+&kp a
+         >;
         };
+
+
+        // ! " # ¤ % & / ) = ´ ` + ? - _ ' * < > ö Ö ä Ä , ; . : å Å ¨
 
         sym_layer {
             bindings = <
