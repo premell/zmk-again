@@ -327,7 +327,7 @@
             tapping-term-ms = <2000>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&bootloader>, <&reset>;
+            bindings = <>, <&reset>;
         };
     };
 
@@ -339,7 +339,7 @@
         default_layer {
             bindings = <
                 &kp Q          &kp G        &kp M       &kp P          &kp V      &kp SE_EQUAL      &kp J             &kp K                &kp SE_LEFT_PARENTHESIS        &kp SE_SINGLE_QUOTE
-                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B         &kp SE_PERIOD                       &hm LALT A            &hm RGUI E        &kp I                 &kp H
+                &kp R   &kp S  &kp N  &hm LALT D     &kp B         &kp SE_PERIOD                       &hm LALT A            &hm RGUI E        &kp I                 &kp H
                 &kp X        &kp F      &kp L       &kp C          &kp W         &kp  SE_SLASH                   &kp U                 &kp O             &kp Y                      &kp BACKSPACE
                                                         &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE                              &operational_mode  
             >;
@@ -386,7 +386,7 @@
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none               &none &none &none &none &none 
             &none &none &bt BT_PRV &bt BT_NXT &none               &none &none &none &none &none 
-            &kp T &none &none &none &hold_reset         &hold_reset &hold_reset &hold_reset &kp L &none
+            &kp T &none &none &reset &bootloader          &bootloader &reset &none &kp L &kp L
                         &tog OPERATIONAL_L &none         &none &none 
             >;
         }; 
