@@ -366,7 +366,7 @@
             tapping-term-ms = <2000>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&reset>, <&bootloader>;
+            bindings = <&bootloader>, <&reset>;
         };
     };
 
