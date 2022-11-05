@@ -332,9 +332,7 @@
     };
 
         keymap  {
-                compatible = "zmk,keymap";
-                //&hm QUESTION EXCLAMATION
-                //hm SQT DQT
+            compatible = "zmk,keymap";
        		
         default_layer {
             bindings = <
