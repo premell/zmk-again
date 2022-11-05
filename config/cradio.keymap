@@ -34,9 +34,9 @@
 #define DEFAULT 0
 #define SYM_L 1
 #define NAV_L 2
-#define NAV2_L 3
-#define UTIL_L 4
-#define OPERATIONAL_L 5
+#define UTIL_L 3
+#define OPERATIONAL_L 4
+//#define NAV2_L 3
 
 // #############      WINDOW KEYS        #################
 
@@ -341,7 +341,7 @@
                 &kp Q          &kp G        &kp M       &kp P          &kp V      &kp SE_EQUAL      &kp J             &kp K                &kp SE_LEFT_PARENTHESIS        &kp SE_SINGLE_QUOTE
                 &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B         &kp SE_PERIOD                       &hm LALT A            &hm RGUI E        &kp I                 &kp H
                 &kp X        &kp F      &kp L       &kp C          &kp W         &kp  SE_SLASH                   &kp U                 &kp O             &kp Y                      &kp BACKSPACE
-                                                        &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE                              &kp LCTRL  
+                                                        &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE                              &tap_dance_operational_mode  
             >;
         };
 
@@ -372,8 +372,6 @@
                                                   &sl NAV_L          &none         &none             &sl SYM_L
             >;
         };
-
-
 
         util_layer {
             bindings = <
