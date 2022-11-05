@@ -12,7 +12,7 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
-# ---
+# --
 # include:
 #   - board: nice_nano_v2
 #     shield: cradio_left
@@ -20,4 +20,4 @@
 #     shield: cradio_right
 
 board: [ "nice_nano_v2" ]
-shield: [ "cradio_left", "cradio_right"]
+shield: [ "cradio_left", "cradio_right", "settings_reset"]
