@@ -183,16 +183,16 @@
             key-positions = <16 17>;
             bindings = <&kp BACKSPACE>;
         };*/
-            combo_return {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-                         bindings = <&kp RETURN>;
-        };
-            combo_esc {
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-                         bindings = <&kp ESCAPE>;
-        };
+        /*     combo_return { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <5 6>; */
+        /*                  bindings = <&kp RETURN>; */
+        /* }; */
+        /*     combo_esc { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <7 8>; */
+        /*                  bindings = <&kp ESCAPE>; */
+        /* }; */
         // TO REMOVE THE DELAY FROM HOMEROW KEYS
             combo_z {
             timeout-ms = <50>;
@@ -336,71 +336,31 @@
                 //&hm QUESTION EXCLAMATION
                 //hm SQT DQT
        		
-        /* default_layer { */
-        /*     bindings = < */
-        /*         &kp Q          &kp G        &kp M       &kp P          &kp V      &hm PLUS EQUAL      &kp J             &kp K                &hm LEFT_BRACE LEFT_PARENTHESIS        &hm RIGHT_BRACE RIGHT_PARENTHESIS */
-        /*         &hm LCTRL R   &hm LSHIFT S  &hm LGUI N  &hm LALT D     &kp B         &hm COMMA PERIOD                       &hm LALT A            &hm RGUI E        &hm RSHFT I                 &hm RCTRL H */
-        /*         &kp X        &kp F      &kp L       &kp C          &kp W         &hm MINUS UNDERSCORE                   &kp U                 &kp O             &kp Y                      &kp BACKSPACE */
-        /*                                                 &sl NAV_L      &lt UTIL_L T        &kp SPACE                              &sl SYM_L */
-        /*     >; */
-        /* }; */
-
-
-        /* default_layer { */
-        /*     bindings = < */
-        /*       &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp AMPERSAND &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp EQUAL &kp PLUS &kp MINUS &kp UNDERSCORE &kp SLASH &kp QUESTION &kp BACKSLASH &kp PIPE &kp NON_US_BACKSLASH &kp PIPE2 &kp SEMICOLON &kp COLON &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COMMA &kp LESS_THAN &kp PERIOD &kp GREATER_THAN &kp LEFT_BRACKET &kp LEFT_BRACE &kp RIGHT_BRACKET &kp RIGHT_BRACE &kp GRAVE &kp TILDE &kp NON_US_HASH   */
-        /*     >; */
-        /* }; */
-
-
-        default {
+        default_layer {
             bindings = <
-&kp RA(NUMBER_2)
-&kp RA(NUMBER_4)
-&kp RA(NUMBER_8)
-&kp RA(NUMBER_9)
-&kp RA(LS(GT))
-&kp RA(LS(LT))
-&kp RA(GT)
-&kp RA(LT)
-&kp RA(RIGHT_BRACKET)
-&kp RA(RIGHT_BRACE)
-&kp RA(RIGHT_PARENTHESIS)
-&kp LS(RIGHT_PARENTHESIS)
-&kp LS(RIGHT_BRACKET)
-&kp LS(RIGHT_BRACE)
-&kp (RIGHT_PARENTHESIS)
-&kp LS(UNDERSCORE)
-&kp LS(SLASH)
-&kp LS(PIPE)
-&kp LS(NON_US_BACKSLASH)
-&kp LS(PIPE2)
-&kp LS(SEMICOLON)
-&kp LS(COLON)
-&kp LS(SQT)
-&kp LS(DQT)
-&kp LS(COMMA)
-&kp LS(LT)
-&kp LS(GT)
-&kp LS(PERIOD)
-&kp LS(LEFT_BRACKET)
-&kp LS(LEFT_BRACE)
-&kp LS(RIGHT_BRACKET)
-&kp LS(RIGHT_BRACE)
-&kp LS(GRAVE)
-&operational_mode
-         >;
+                &kp Q          &kp G        &kp M       &kp P          &kp V      &kp SE_EQUAL      &kp J             &kp K                &kp SE_LEFT_PARENTHESIS        &kp SE_SINGLE_QUOTE
+                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B         &kp SE_PERIOD                       &hm LALT A            &hm RGUI E        &kp I                 &kp H
+                &kp X        &kp F      &kp L       &kp C          &kp W         &kp  SE_SLASH                   &kp U                 &kp O             &kp Y                      &kp BACKSPACE
+                                                        &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE                              &kp LCTRL  
+            >;
         };
 
+        /* sym_layer { */
+        /*     bindings = < */
+        /*         &kp DQT     &kp SQT     &kp QUESTION      &kp   EXCLAMATION       &none     &none          &none     &none     &none      &none                */
+        /*         &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE    &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE */
+        /*         &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp SEMICOLON   &kp AT_SIGN              &hm BACKSLASH STAR  &kp TILDE             &kp CARET            &kp AMPERSAND         &kp LT     &kp GT */
+        /*                                                           &sl NAV_L          &none         &none             &sl SYM_L */
+        /*     >; */
+        /* }; */
 
-        // ! " # ¤ % & / ) = ´ ` + ? - _ ' * < > ö Ö ä Ä , ; . : å Å ¨
 
         sym_layer {
             bindings = <
                 &kp DQT     &kp SQT     &kp QUESTION      &kp   EXCLAMATION       &none     &none          &none     &none     &none      &none               
-                &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE    &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE
+                &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE             &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE
                 &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp SEMICOLON   &kp AT_SIGN              &hm BACKSLASH STAR  &kp TILDE             &kp CARET            &kp AMPERSAND         &kp LT     &kp GT
-                                                                  &sl NAV_L          &none         &none             &sl SYM_L
+                                                                  &none          &mo NAV_L        &kp T    &none
             >;
         };
 
@@ -412,35 +372,40 @@
                                                   &sl NAV_L          &none         &none             &sl SYM_L
             >;
         };
-        // TODO improve this
-        nav2_layer {
-   bindings = <
-                   &kp SEND_W_TO_1        &kp SEND_W_TO_2        &kp SEND_W_TO_3       &kp SEND_W_TO_4          &kp SEND_W_TO_5       &kp SEND_W_TO_6     &kp SEND_W_TO_7     &kp SEND_W_TO_8     &kp SEND_W_TO_9          &none
-                &kp DEC_COL     &kp INC_COL     &kp DEC_MASTER      &kp INC_MASTER          &kp F1  &kp F2 &kp F3  &kp F4  &kp F5
-                 &sk LSHIFT      &sk LCTRL     &sk LGUI       &sk LALT                    &none                       &kp F6 &kp F7 &kp F8  &kp F9  &kp F10  
-                                                         &none     &none       &kp F11  &kp F12 
-            >;
-        };
 
 
 
-        UTIL_L {
+        util_layer {
             bindings = <
-                &kp DELETE     &none     &cut      &yank       &none                        &none               &kp J     &kp K  &kp G         &none
+                 &kp SE_PLUS &kp SE_MINUS  &kp SE_STAR &kp SE_SLASH &kp SE_EQUAL                &kp TAB     &kp J     &kp K  &kp G         &none
                  &hm LCTRL NUMBER_1     &hm LSHIFT NUMBER_2     &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0
-                &none &none     &kp TAB     &kp BACKSPACE       &none          &none           &kp LEFT_ARROW         &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW    
+                 &kp DELETE  &cut      &yank  &kp BACKSPACE       &kp RETURN          &kp ESCAPE           &kp LEFT_ARROW         &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW    
                                                   &none          &none       &kp SPACE         &none
             >;
         }; 
 
-        OPERATIONAL_L {
+        operational_layer {
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none               &none &none &none &none &none 
             &none &none &bt BT_PRV &bt BT_NXT &none               &none &none &none &none &none 
-            &kp T &none &none &none &hold_reset         &hold_reset &hold_reset &hold_reset &none &none
-                        &tog 0 &none         &none &none 
+            &kp T &none &none &none &hold_reset         &hold_reset &hold_reset &hold_reset &kp L &none
+                        &tog OPERATIONAL_L &none         &none &none 
             >;
         }; 
+
+
+
+
+
+   /*      // TODO improve this */
+   /*      nav2_layer { */
+   /* bindings = < */
+   /*                 &kp SEND_W_TO_1        &kp SEND_W_TO_2        &kp SEND_W_TO_3       &kp SEND_W_TO_4          &kp SEND_W_TO_5       &kp SEND_W_TO_6     &kp SEND_W_TO_7     &kp SEND_W_TO_8     &kp SEND_W_TO_9          &none */
+   /*              &kp DEC_COL     &kp INC_COL     &kp DEC_MASTER      &kp INC_MASTER          &kp F1  &kp F2 &kp F3  &kp F4  &kp F5 */
+   /*               &sk LSHIFT      &sk LCTRL     &sk LGUI       &sk LALT                    &none                       &kp F6 &kp F7 &kp F8  &kp F9  &kp F10   */
+   /*                                                       &none     &none       &kp F11  &kp F12  */
+   /*          >; */
+   /*      }; */
 
     };
 };
