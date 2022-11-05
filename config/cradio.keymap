@@ -394,15 +394,15 @@
 
         default {
             bindings = <
-&kp LS(NUMBER_2) 
-&kp LS(AT_SIGN)
-&kp LS(HASH)
-&kp LS(GT)
+&kp LA(NUMBER_2)
+&kp LA(NUMBER_4)
+&kp LA(NUMBER_8)
+&kp LA(NUMBER_9)
 &kp LA(LS(GT))
-&kp LS(CARET)
-&kp LS(AMPERSAND)
-&kp LS(ASTERISK)
-&kp LS(LEFT_PARENTHESIS)
+&kp LA(LS(LT))
+&kp LA(RIGHT_BRACKET)
+&kp LA(RIGHT_BRACE)
+&kp LA(RIGHT_PARENTHESIS)
 &kp LS(RIGHT_PARENTHESIS)
 &kp LS(EQUAL)
 &kp LS(PLUS)
