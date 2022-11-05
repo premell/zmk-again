@@ -316,7 +316,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>,<&kp LSHIFT>, <&kp LSHIFT>, <&tog OPERATIONAL_L>;
+            bindings = <&kp LCTRL>, <&kp LCTRL>,<&kp LCTRL>, <&kp LCTRL>, <&tog OPERATIONAL_L>;
         };
 
         hold_reset: hold_reset{
