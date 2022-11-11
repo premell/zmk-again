@@ -312,13 +312,14 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // operational_mode: tap_dance_operational_mode {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "TAP_DANCE_0";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <500>;
-        //     bindings = <&kp LCTRL>, <&kp LCTRL>,<&kp LCTRL>, <&kp LCTRL>, <&tog OPERATIONAL_L>;
-        // };
+        //Commenting these two out makes hm work
+        operational_mode: tap_dance_operational_mode {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp LCTRL>, <&kp LCTRL>,<&kp LCTRL>, <&kp LCTRL>, <&tog OPERATIONAL_L>;
+        };
 
         // hold_reset: hold_reset{
         //     compatible = "zmk,behavior-hold-tap";
