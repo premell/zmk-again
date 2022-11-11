@@ -321,15 +321,15 @@
             bindings = <&kp LCTRL>, <&kp LCTRL>,<&kp LCTRL>, <&kp LCTRL>, <&tog OPERATIONAL_L>;
         };
 
-        // hold_reset: hold_reset{
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "HOMEROW_MODS";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <2000>;
-        //     quick-tap-ms = <0>;
-        //     flavor = "tap-preferred";
-        //     bindings = <&bootloader>, <&reset>;
-        // };
+        hold_reset: hold_reset{
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&bootloader>, <&reset>;
+        };
     };
 
         keymap  {
