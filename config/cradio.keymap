@@ -321,15 +321,16 @@
             bindings = <&kp LCTRL>, <&kp LCTRL>,<&kp LCTRL>, <&kp LCTRL>, <&tog OPERATIONAL_L>;
         };
 
-        hold_reset: hold_reset{
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <2000>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&bootloader>, <&reset>;
-        };
+        // this one is doomed for some reason it destroys everything
+        // hold_reset: hold_reset{
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "HOMEROW_MODS";
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <2000>;
+        //     quick-tap-ms = <0>;
+        //     flavor = "tap-preferred";
+        //     bindings = <&bootloader>, <&reset>;
+        // };
     };
 
         keymap  {
@@ -340,7 +341,7 @@
                 &kp Q          &kp G        &kp M       &kp P          &kp V      &kp SE_EQUAL      &kp J             &kp K                &kp SE_LEFT_PARENTHESIS        &kp SE_SINGLE_QUOTE
                 &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B         &kp SE_PERIOD                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
                 &kp X        &kp F      &kp L       &kp C          &kp W         &kp  SE_SLASH                   &kp U                 &kp O             &kp Y                      &kp BACKSPACE
-                                                        &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE     &kp LCTRL /*&operational_mode*/
+                                                        &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE     &operational_mode
             >;
         };
 
