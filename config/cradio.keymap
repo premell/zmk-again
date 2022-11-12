@@ -392,7 +392,7 @@
               &none &none &kp SE_SINGLE_QUOTE &none &none                                                                 &kp SE_PLUS &kp SE_MINUS &kp SE_EQUAL &kp SE_SLASH &kp SE_STAR 
               &kp SE_DOLLAR &kp SE_HASH &kp SE_LEFT_BRACKET &kp SE_RIGHT_BRACKET &kp SE_COLON                             &kp SE_AMPERSAND &kp SE_LEFT_BRACE &kp SE_RIGHT_BRACE &kp SE_EXCLAMATION &kp SE_QUESTION
               &kp SE_AT_SIGN &kp SE_PIPE &kp SE_LT &kp SE_GT &kp SE_SEMI_COLON                                            &kp SE_PERCENT &kp SE_PERIOD &kp SE_COMMA &kp SE_UNDERSCORE &kp BACKSPACE
-              &none &none &none &kp LCTRL
+              &none &sl NAV_L                                &sl SYM_L &kp LCTRL
             >;
         };
         /* sym_layer { */
@@ -409,7 +409,7 @@
                          &none       &none     &none     &none     &none          &kp ROT_LAYOUT             &kp KILL_WINDOW   &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       
                 &kp DESKTOP_LT     &kp DESKTOP_RT     &kp  WINDOW_LT     &kp WINDOW_RT     &none  &none  &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4     
                 &none     &none     &none        &kp TOGGLE_FLOATING &none                        &none       &kp DESKTOP_PREV        &kp DESKTOP_SPEC    &kp SHRINK_WIDTH     &kp EXPAND_WIDTH
-                                                  &sl NAV_L          &none         &none             &sl SYM_L
+                                              &none    &sl NAV_L                                &sl SYM_L  &none
             >;
         };
 
@@ -418,7 +418,7 @@
                  &kp SE_PLUS &kp SE_MINUS  &kp SE_STAR &kp SE_SLASH &kp SE_EQUAL                &kp TAB     &kp J     &kp K  &kp G         &none
                  &hm LCTRL NUMBER_1     &hm LSHIFT NUMBER_2     &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0
                  &kp DELETE  &cut      &yank  &kp BACKSPACE       &kp RETURN          &kp ESCAPE           &kp LEFT_ARROW         &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW    
-                                                  &none          &none       &kp SPACE         &none
+                                                  &none          &none            &none &kp SPACE
             >;
         }; 
 
