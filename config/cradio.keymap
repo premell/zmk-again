@@ -380,9 +380,9 @@
        		
         default_layer {
             bindings = <
-                &kp Q          &kp G        &kp M       &kp P          &kp V      &td_equal_minus      &kp J             &kp K                &td_left_par_brace       &td_right_par_brace
+                &kp Q          &kp G        &kp M       &kp P          &kp BACKSPACE      &td_equal_minus      &kp J             &kp K                &td_left_par_brace       &td_right_par_brace
                 &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B                   &td_period_comma                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
-                &kp X        &kp F      &kp L       &kp C          &kp W         &td_sq_slash                  &kp U                 &kp O             &kp Y                      &kp BACKSPACE
+                &kp X        &kp F      &kp L       &kp C          &kp W         &td_sq_slash                  &kp U                 &kp O             &kp Y                      &kp V 
                                                         &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE     &operational_mode
             >;
         };
