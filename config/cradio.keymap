@@ -323,43 +323,43 @@
             bindings = <&kp LCTRL>, <&kp LCTRL>,<&kp LCTRL>, <&kp LCTRL>, <&tog OPERATIONAL_L>;
         }; 
 
-        td_equal_minus: tap_dance {
+        td_equal_minus: td_equal_minus {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp SE_EQUAL>, <&kp SE_PLUS>;
         }; 
 
-        td_period_comma: tap_dance {
+        td_period_comma: td_period_comma {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp SE_PERIOD>, <&kp SE_COMMA>;
         }; 
 
-        td_sq_slash: tap_dance {
+        td_sq_slash: td_sq_slash {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp SE_SINGLE_QUOTE>, <&kp SE_SLASH>;
         }; 
 
-        td_left_par_brace: tap_dance {
+        td_left_par_brace: td_left_par_brace {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp SE_LEFT_PARENTHESIS>, <&kp SE_LEFT_BRACE>;
         }; 
 
-        td_right_par_brace: tap_dance {
+        td_right_par_brace: td_right_par_brace {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp SE_RIGHT_PARENTHESIS>, <&kp SE_RIGHT_BRACE>;
         }; 
 
