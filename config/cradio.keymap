@@ -325,7 +325,7 @@
 
         td_equal_minus: td_equal_minus {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp SE_EQUAL>, <&kp SE_PLUS>;
@@ -333,7 +333,7 @@
 
         td_period_comma: td_period_comma {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp SE_PERIOD>, <&kp SE_COMMA>;
@@ -341,7 +341,7 @@
 
         td_sq_slash: td_sq_slash {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_3";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp SE_SINGLE_QUOTE>, <&kp SE_SLASH>;
@@ -349,7 +349,7 @@
 
         td_left_par_brace: td_left_par_brace {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_4";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp SE_LEFT_PARENTHESIS>, <&kp SE_LEFT_BRACE>;
@@ -357,7 +357,7 @@
 
         td_right_par_brace: td_right_par_brace {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_5";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp SE_RIGHT_PARENTHESIS>, <&kp SE_RIGHT_BRACE>;
