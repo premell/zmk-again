@@ -392,7 +392,7 @@
               &none &none &kp SE_SINGLE_QUOTE &none &none                                                                 &kp SE_PLUS &kp SE_MINUS &kp SE_EQUAL &kp SE_SLASH &kp SE_STAR 
               &kp SE_DOLLAR &kp SE_HASH &kp SE_LEFT_BRACKET &kp SE_RIGHT_BRACKET &kp SE_COLON                             &kp SE_AMPERSAND &kp SE_LEFT_BRACE &kp SE_RIGHT_BRACE &kp SE_EXCLAMATION &kp SE_QUESTION
               &kp SE_AT_SIGN &kp SE_PIPE &kp SE_LT &kp SE_GT &kp SE_SEMI_COLON                                            &kp SE_PERCENT &kp SE_PERIOD &kp SE_COMMA &kp SE_UNDERSCORE &kp BACKSPACE
-              &none &none &none &ctrl
+              &none &none &none &kp LCTRL
             >;
         };
         /* sym_layer { */
