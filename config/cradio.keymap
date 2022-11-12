@@ -98,6 +98,8 @@
 // TODO POWER DOWN
 
 
+// TODO fix swedish double quotes
+// TODO add backslash and these ~ ` ^
 // Swedish keys
 #define SE_EXCLAMATION  EXCLAMATION
 #define SE_aa LEFT_BRACKET 
@@ -338,23 +340,31 @@
        		
         default_layer {
             bindings = <
-                &kp Q          &kp G        &kp M       &kp P          &kp V      &kp SE_EQUAL      &kp J             &kp K                &kp SE_LEFT_PARENTHESIS        &kp SE_SINGLE_QUOTE
-                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B         &kp SE_PERIOD                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
-                &kp X        &kp F      &kp L       &kp C          &kp W         &kp  SE_SLASH                   &kp U                 &kp O             &kp Y                      &kp BACKSPACE
+                &kp Q          &kp G        &kp M       &kp P          &kp V      &kp SE_EQUAL      &kp J             &kp K                &kp SE_LEFT_PARENTHESIS        &kp SE_RIGHT_PARENTHESIS
+                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B                   &kp SE_PERIOD                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
+                &kp X        &kp F      &kp L       &kp C          &kp W         &kp  SE_SINGLE_QUOTE                   &kp U                 &kp O             &kp Y                      &kp BACKSPACE
                                                         &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE     &operational_mode
             >;
         };
 
-
-
         sym_layer {
             bindings = <
-                &kp DQT     &kp SQT     &kp QUESTION      &kp   EXCLAMATION       &none     &none          &none     &none     &none      &none               
-                &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE             &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE
-                &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp SEMICOLON   &kp AT_SIGN              &hm BACKSLASH STAR  &kp TILDE             &kp CARET            &kp AMPERSAND         &kp LT     &kp GT
-                                                                  &none          &mo NAV_L        &kp T    &none
+              &none &none &kp SE_SINGLE_QUOTE &none &none                                                  &kp SE_PLUS &kp SE_MINUS &SE_EQUAL &kp SE_SLASH &kp SE_STAR 
+              &kp SE_DOLLAR &kp SE_HASH &kp SE_LEFT_BRACKET &kp SE_LEFT_BRACKET &kp SE_COLON                             &kp SE_AMPERSAND &kp SE_LEFT_BRACE &kp SE_LEFT_BRACE &kp SE_EXCLAMATION &kp SE_QUESTION
+              &kp SE_AT_SIGN &kp SE_PIPE &kp SE_GT &kp SE_LT &kp SE_SEMI_COLON                                            &kp SE_PERCENT &kp SE_PERIOD &kp SE_COMMA &kp SE_UNDERSCORE &kp BACKSPACE
+              &none &none &none &none 
             >;
         };
+
+
+        /* sym_layer { */
+        /*     bindings = < */
+        /*         &kp DQT     &kp SQT     &kp QUESTION      &kp EXCLAMATION       &none     &none          &none     &none     &none      &none                */
+        /*         &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &kp COLON     &kp DOLLAR                   &kp PIPE             &kp GRAVE             &kp HASH      &kp PERCENT     &kp LEFT_BRACE     &kp RIGHT_BRACE */
+        /*         &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp SEMICOLON   &kp AT_SIGN              &hm BACKSLASH STAR  &kp TILDE             &kp CARET            &kp AMPERSAND         &kp LT     &kp GT */
+        /*                                                           &none          &mo NAV_L        &kp T    &none */
+        /*     >; */
+        /* }; */
 
         nav_layer {
             bindings = <
@@ -378,7 +388,7 @@
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none               &none &none &none &none &none 
             &none &none &bt BT_PRV &bt BT_NXT &none               &none &none &none &none &none 
-            &kp T &none &none &reset &bootloader          &bootloader &reset &none &kp L &kp L
+            &kp T &reset &none &none  &bootloader          &bootloader &none &none &reset &kp T
                         &tog OPERATIONAL_L &none         &none &none 
             >;
         }; 
