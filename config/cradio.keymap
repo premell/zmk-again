@@ -323,12 +323,44 @@
             bindings = <&kp LCTRL>, <&kp LCTRL>,<&kp LCTRL>, <&kp LCTRL>, <&tog OPERATIONAL_L>;
         }; 
 
-        td: tap_dance {
+        td_equal_minus: tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp SE_EQUAL>, <&kp SE_PLUS>;
+        }; 
+
+        td_period_comma: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SE_PERIOD>, <&kp SE_COMMA>;
+        }; 
+
+        td_sq_slash: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SE_SINGLE_QUOTE>, <&kp SE_SLASH>;
+        }; 
+
+        td_left_par_brace: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SE_LEFT_PARENTHESIS>, <&kp SE_LEFT_BRACE>;
+        }; 
+
+        td_right_par_brace: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SE_RIGHT_PARENTHESIS>, <&kp SE_RIGHT_BRACE>;
         }; 
 
         // this one is doomed for some reason it destroys everything
@@ -348,9 +380,9 @@
        		
         default_layer {
             bindings = <
-                &kp Q          &kp G        &kp M       &kp P          &kp V      &td SE_EQUAL SE_MINUS      &kp J             &kp K                &td SE_LEFT_PARENTHESIS SE_LEFT_BRACKET       &td SE_RIGHT_PARENTHESIS  SE_RIGHT_BRACKET
-                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B                   &td SE_PERIOD SE_COMMA                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
-                &kp X        &kp F      &kp L       &kp C          &kp W         &td SE_SINGLE_QUOTE SE_SLASH                  &kp U                 &kp O             &kp Y                      &kp BACKSPACE
+                &kp Q          &kp G        &kp M       &kp P          &kp V      &td_equal_minus      &kp J             &kp K                &td_left_par_brace       &td_right_par_brace
+                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B                   &td_period_comma                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
+                &kp X        &kp F      &kp L       &kp C          &kp W         &td_sq_slash                  &kp U                 &kp O             &kp Y                      &kp BACKSPACE
                                                         &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE     &operational_mode
             >;
         };
