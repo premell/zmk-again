@@ -375,21 +375,21 @@
             label = "EQUAL_AA";
             #binding-cells = <0>;
             bindings = <&td_equal_minus>, <&kp SE_aa>;
-            mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
         };
         period_ae: period_ae{
             compatible = "zmk,behavior-mod-morph";
             label = "PERIOD_AE";
             #binding-cells = <0>;
             bindings = <&td_period_comma>, <&kp SE_ae>;
-            mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
         };
         sq_oe: sq_oe {
             compatible = "zmk,behavior-mod-morph";
             label = "SQ_OE";
             #binding-cells = <0>;
             bindings = <&td_sq_slash>, <&kp SE_oe>;
-            mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
         };
 
         // this one is doomed for some reason it destroys everything
