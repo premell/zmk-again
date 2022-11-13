@@ -136,6 +136,12 @@
 #define SE_LEFT_PARENTHESIS LS(NUMBER_8)
 #define SE_RIGHT_PARENTHESIS  LS(NUMBER_9)
 
+// testing these ones
+#define SE_TILDE RA(RIGHT_BRACKET)
+#define SE_GRAVE LS(EQUAL)
+#define SE_CARET LS(RIGHT_BRACKET)
+#define SE_PIPE RA(NON_US_BACKSLASH)
+
 
 // TODO add å ä and ö to the keyboard
  /*         combto_aa {
@@ -363,6 +369,33 @@
             bindings = <&kp SE_RIGHT_PARENTHESIS>, <&kp SE_RIGHT_BRACE>;
         }; 
 
+&kp BACKSPACE      &td_equal_minus 
+           &td_period_comma        
+W         &td_sq_slash             
+
+        // testing ctrl + symbol = å,ä,ö
+        equal_aa: equal_aa {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_AA";
+            #binding-cells = <0>;
+            bindings = <&td_equal_minus>, <&kp SE_aa>;
+            mods = <(MOD_LCTRL)>;
+        };
+        period_ae: period_ae{
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_AE";
+            #binding-cells = <0>;
+            bindings = <&td_period_comma>, <&kp SE_ae>;
+            mods = <(MOD_LCTRL)>;
+        };
+        sq_oe: sq_oe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQ_OE";
+            #binding-cells = <0>;
+            bindings = <&td_sq_slash>, <&kp SE_oe>;
+            mods = <(MOD_LCTRL)>;
+        };
+
         // this one is doomed for some reason it destroys everything
         // hold_reset: hold_reset{
         //     compatible = "zmk,behavior-hold-tap";
@@ -389,7 +422,7 @@
 
         sym_layer {
             bindings = <
-              &none &none &kp SE_SINGLE_QUOTE &none &none                                                                 &kp SE_PLUS &kp SE_MINUS &kp SE_EQUAL &kp SE_SLASH &kp SE_STAR 
+              &kp SE_CARET &kp SE_TILDE &kp SE_SINGLE_QUOTE &kp SE_PIPE &kp SE_GRAVE                                                                 &kp SE_PLUS &kp SE_MINUS &kp SE_EQUAL &kp SE_SLASH &kp SE_STAR 
               &kp SE_DOLLAR &kp SE_HASH &kp SE_LEFT_BRACKET &kp SE_RIGHT_BRACKET &kp SE_COLON                             &kp SE_AMPERSAND &kp SE_LEFT_BRACE &kp SE_RIGHT_BRACE &kp SE_EXCLAMATION &kp SE_QUESTION
               &kp SE_AT_SIGN &kp SE_PIPE &kp SE_LT &kp SE_GT &kp SE_SEMI_COLON                                            &kp SE_PERCENT &kp SE_PERIOD &kp SE_COMMA &kp SE_UNDERSCORE &kp BACKSPACE
               &none &sl NAV_L                                &sl SYM_L &kp LCTRL
