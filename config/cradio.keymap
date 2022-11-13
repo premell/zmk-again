@@ -432,12 +432,13 @@
         /*                                                           &none          &mo NAV_L        &kp T    &none */
         /*     >; */
         /* }; */
-
+//&kp SHRINK_WIDTH     &kp EXPAND_WIDTH
         nav_layer {
             bindings = <
-                         &none       &none     &none     &none     &none          &kp ROT_LAYOUT             &kp KILL_WINDOW   &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       
-                &kp DESKTOP_LT     &kp DESKTOP_RT     &kp  WINDOW_LT     &kp WINDOW_RT     &none  &none  &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4     
-                &none     &none     &none        &kp TOGGLE_FLOATING &none                        &none       &kp DESKTOP_PREV        &kp DESKTOP_SPEC    &kp SHRINK_WIDTH     &kp EXPAND_WIDTH
+                &none       &none     &none     &none     &none                                   &kp ROT_LAYOUT            &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       &kp KILL_WINDOW
+                &kp DESKTOP_LT     &kp DESKTOP_RT     &kp  WINDOW_LT     &kp WINDOW_RT     &none  &kp DESKTOP_PREV  &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4     
+                &none     &none     &none        &kp TOGGLE_FLOATING &none                        &kp DESKTOP_SPEC  &kp WINDOW_5        &kp WINDOW_6        &kp WINDOW_7       &kp WINDOW_8     
+
                                               &none    &sl NAV_L                                &sl SYM_L  &none
             >;
         };
