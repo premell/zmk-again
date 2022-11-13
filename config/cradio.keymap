@@ -120,7 +120,7 @@
 #define SE_MINUS SLASH
 #define SE_QUESTION UNDERSCORE
 #define SE_PLUS  MINUS
-#define SE_GRAVE  EQUAL
+//#define SE_GRAVE  EQUAL
 #define SE_EQUAL RIGHT_PARENTHESIS
 #define SE_SLASH AMPERSAND
 #define SE_AMPERSAND CARET
@@ -140,7 +140,7 @@
 #define SE_TILDE RA(RIGHT_BRACKET)
 #define SE_GRAVE LS(EQUAL)
 #define SE_CARET LS(RIGHT_BRACKET)
-#define SE_PIPE RA(NON_US_BACKSLASH)
+//#define SE_PIPE RA(NON_US_BACKSLASH)
 
 
 // TODO add å ä and ö to the keyboard
@@ -369,10 +369,6 @@
             bindings = <&kp SE_RIGHT_PARENTHESIS>, <&kp SE_RIGHT_BRACE>;
         }; 
 
-&kp BACKSPACE      &td_equal_minus 
-           &td_period_comma        
-W         &td_sq_slash             
-
         // testing ctrl + symbol = å,ä,ö
         equal_aa: equal_aa {
             compatible = "zmk,behavior-mod-morph";
@@ -413,9 +409,9 @@ W         &td_sq_slash
        		
         default_layer {
             bindings = <
-                &kp Q          &kp G        &kp M       &kp P          &kp BACKSPACE      &td_equal_minus      &kp J             &kp K                &td_left_par_brace       &td_right_par_brace
-                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B                   &td_period_comma                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
-                &kp X        &kp F      &kp L       &kp C          &kp W         &td_sq_slash                  &kp U                 &kp O             &kp Y                      &kp V 
+                &kp Q          &kp G        &kp M       &kp P          &kp BACKSPACE      &equal_aa      &kp J             &kp K                &td_left_par_brace       &td_right_par_brace
+                &kp R   &kp S  &hm LGUI N  &hm LALT D     &kp B                   &period_ae                       &hm LALT A            &hm LGUI E        &kp I                 &kp H
+                &kp X        &kp F      &kp L       &kp C          &kp W         &sq_oe                  &kp U                 &kp O             &kp Y                      &kp V 
                                                         &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE     &operational_mode
             >;
         };
