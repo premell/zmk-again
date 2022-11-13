@@ -127,7 +127,7 @@
 #define SE_PERCENT PERCENT
 #define SE_HASH HASH
 #define SE_AT_SIGN RA(NUMBER_2)
-#define SE_PIPE DOUBLE_QUOTES
+//#define SE_PIPE DOUBLE_QUOTES
 #define SE_DOLLAR RA(NUMBER_4)
 #define SE_LEFT_BRACE RA(NUMBER_7)
 #define SE_RIGHT_BRACE RA(NUMBER_0)
@@ -140,7 +140,7 @@
 #define SE_TILDE RA(RIGHT_BRACKET)
 #define SE_GRAVE LS(EQUAL)
 #define SE_CARET LS(RIGHT_BRACKET)
-//#define SE_PIPE RA(NON_US_BACKSLASH)
+#define SE_PIPE RA(NON_US_BACKSLASH)
 
 
 // TODO add å ä and ö to the keyboard
@@ -415,7 +415,6 @@
                                                         &kp LSHIFT       &lt NAV_L T        &lt SYM_L SPACE     &operational_mode
             >;
         };
-
         sym_layer {
             bindings = <
               &kp SE_CARET &kp SE_TILDE &kp SE_SINGLE_QUOTE &kp SE_PIPE &kp SE_GRAVE                                                                 &kp SE_PLUS &kp SE_MINUS &kp SE_EQUAL &kp SE_SLASH &kp SE_STAR 
